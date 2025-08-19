@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    padding: 16px 32px;
+}
+
+nav i{
+    font-size: 1.5rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+    font-weight: 700;
+}
+
+.navlist ul {
+    display: flex;
+    list-style: none;
+    gap: 60px;
+}
+
+.navlist a{
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,123 @@
+html, body{
+    font-family: "Inter", sans-serif;
+    background-color: rgba(255, 255, 255, 0.589);
+}
+
+header{
+    background-color:rgb(235, 80, 24)    
+}
+
+nav i{
+    font-size: 1.5rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+    font-weight: 700;
+    color: rgb(255, 253, 253);
+}
+
+.navlist ul {
+    display: flex;
+    list-style: none;
+    gap: 60px;
+}
+
+.navlist a{
+    text-decoration: none;
+    color: black;
+}
+
+.navlist select{
+    border: none;
+    background-color: inherit;
+    font-weight: 700;
+}
+
+.navlist a:hover{
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.cards img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+.cards{
+    border: 1px solid #e5e5e5;
+    text-align: start; 
+    transition: 1.2s ease;
+}
+
+.details {
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.details h4{
+    padding: 20px 0;
+    color: rgb(0, 0, 0);
+}
+
+.details p:first-of-type {
+    color: rgb(97, 97, 97);
+    padding-bottom: 10px;
+}
+
+.details p{
+    color: rgb(0, 0, 0);
+}
+
+.details p:last-of-type{
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.cards-part{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 20px;
+}
+
+.card-links{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+
+}
+
+.cards:hover{
+    cursor: pointer;
+    box-shadow: 0 3px 12px 2px #ccc;
+}
+
+.contact{
+    padding-top: 10px;
+}
+
+.contact ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 55px;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.contact a{
+    color: black;
+}
+
+footer{
+   background-color: rgb(235, 80, 24);
+    text-align: center;   
+    color: rgb(255, 255, 255);
+}
