@@ -38,6 +38,11 @@ html{
     font-weight: 560;
 }
 
+.handburger{
+    display: none;
+}
+
+
 .home{
     padding-top: 40px;
     display: flex;
@@ -62,7 +67,7 @@ html{
     flex-direction: column;
     gap: 15px;
     font-size: larger;
-    width: 60%;
+    width: 80%;
 }
 
 .content button{
@@ -193,6 +198,10 @@ html{
     gap: 20px;
 }
 
+.sendMessage input,.sendMessage textarea{
+    border: 2px solid black;
+}
+
 .sendMessage button{
     border: none;
     background-color: rgb(235, 80, 24);
@@ -214,4 +223,146 @@ html{
 #footer i{
     color: antiquewhite;
     font-size: large;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    nav{
+        padding: 15px 15px;
+    }
+
+    .handburger{
+        display: block;
+    }
+
+    main{
+        padding: 1px;
+    }
+
+    .large{
+        font-size: xx-large;
+        cursor: pointer;
+    }
+
+    .navlist {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        margin-top: 350px;
+        background-color: #ffe4e4;
+        padding: 10px;
+        right: 5px;
+    }
+
+    .navlist ul{
+        position: relative;
+        flex-direction: column;
+        
+    }
+
+    .navlist.active{
+        display: flex;
+    }
+
+
+    .handburger i:hover{
+        cursor: pointer;
+        transform: none;
+        color: black;
+    }
+
+    .nav-social-links{
+        display: none;
+    }
+  
+  .home {
+    flex-direction: column;   
+    text-align: center;   
+    align-items: center;  
+  }
+
+  .home img{
+    height: 300px;
+    width: 300px;
+    order: -1;
+  }
+
+  .content{
+    width: 100%;
+    align-items: center;
+  }
+
+  .content p{
+    width: 100%;
+    text-align: justify;
+    padding-bottom: 10px;
+  }
+
+  .personalDetails ul{
+    flex-direction: column;
+  }
+
+  .about-content p{
+        text-align: justify;
+  }
+
+  .projects{
+    padding: 0 10px;
+  }
+
+
+  .contact-flex{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sendMessage{
+    width: 60%;
+    align-items: center;
+  }
+
+  .sendMessage button{
+    padding: 2%;
+    margin-bottom: 10px;
+    color: rgb(240, 238, 238);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+    
+  .nav-social-links {
+    display: none;
+  }
+
+  .home{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1px ;
+  }
+
+  .content p{
+    text-align: justify;
+  }
+
+  .home img{
+        order: -1;
+  }
+
+  .personalDetails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .personalDetails ul{
+    flex-direction: column;
+  }
+
+  .content{
+    align-items: center;
+  }
+
+
 }

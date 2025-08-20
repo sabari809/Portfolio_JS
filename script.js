@@ -1,5 +1,6 @@
-const sabariInfo = document.getElementById("sabari")
+const handburger = document.querySelector(".handburger");
+const navlist = document.querySelector(".navlist");
 
-sabariInfo.onclick(()=>{
-    window.location.href = "User1.html"
-})
+handburger.addEventListener("click", () => {
+  navlist.classList.toggle("active");
+});
